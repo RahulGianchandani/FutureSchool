@@ -14,10 +14,12 @@
   font-family: 'Barlow', sans-serif !important;
   font-weight: 400 !important;
 }
+
 .barlow-medium {
   font-family: 'Barlow', sans-serif !important;
   font-weight: 500 !important;
 }
+
 .barlow-semi-bold {
   font-family: 'Barlow', sans-serif !important;
   font-weight: 700 !important;
@@ -42,10 +44,12 @@
   font-family: 'Poppins', sans-serif !important;
   font-weight: 600 !important;
 }
+
 .poppins-bold {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 700 !important;
 }
+
 .poppins-extra-bold {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 800 !important;
@@ -255,7 +259,7 @@ a {
 }
 
 .footer-border-color {
-  border-color:rgba(145, 158, 171, 1);
+  border-color: rgba(145, 158, 171, 1);
 }
 
 .footer-bottom-hr {
@@ -278,6 +282,7 @@ a {
   border: 1px solid rgba(30, 31, 36, 0.15) !important;
   border-radius: 4px !important;
 }
+
 #FAQsection .box {
   background-color: rgba(249, 250, 251, 1) !important;
   transform: translateY(-160px);
@@ -287,4 +292,28 @@ a {
   background-image: url("./assets/plus.png");
   background-size: 14.58px;
   align-self: end;
+}
+
+#stdsPrntSec .stud-1BG {
+  background: rgba(125, 168, 102, 1);
+}
+
+#stdsPrntSec .stud-2BG {
+  background: rgba(237, 112, 65, 1);
+}
+
+#stdsPrntSec .stud-3BG {
+  background: rgba(246, 205, 96, 1);
+}
+
+#stdsPrntSec .stud-4BG {
+  background: rgba(125, 203, 225, 1);
+}
+
+#stdsPrntSec .txtDiv {
+  box-shadow: 0px 9px 64px -8px rgba(145, 158, 171, 0.2);
+}
+
+#bit-dark {
+  color: rgba(0, 0, 0, 1);
 }
