@@ -13,7 +13,21 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src='script.js'></script>
 	<script>    	tailwind.config = {
-			theme: { extend: {}, }, plugins: [], corePlugins: { visibility: false, },
+			theme: {
+				screens: {
+					'sm': '576px',
+
+					'md': '768px',
+
+					'lg': '992px',
+
+					'xl': '1200px',
+
+					'xxl': '1400px',
+
+					'2xl': '1536px',
+				},
+			}, plugins: [], corePlugins: { visibility: false, },
 		}  </script>
 </head>
 
@@ -69,9 +83,10 @@
 			<div class="d-flex justify-content-between align-items-center">
 
 				<div id="leftSide " class="col-6">
-					<h1 class="gradient-theme-text-1 !leading-[121px] !text-[100px]">Futurescool</h1>
-					<h2 class="text-white">Forging Stronger Futures. One Skill at a Time</h2>
-					<p class="text-white leading-[30px] mt-[10px]">Revolutionising education and empowering the next
+					<h1 class="gradient-theme-text-1 !leading-[121px] !text-[100px] max-xxl:!text-[80px]">Futurescool
+					</h1>
+					<h2 class="text-white max-xxl:!text-[36px]">Forging Stronger Futures. One Skill at a Time</h2>
+					<p class="text-white leading-[30px] mt-[10px] ">Revolutionising education and empowering the next
 						generation of 8-18 year olds with essential soft skills and cutting-edge technologies to thrive
 						in the digital age</p>
 					<button
@@ -95,10 +110,10 @@
 	<!-- 2nd SHAPPING SECTION  -->
 	<section id="shappingSec">
 		<div class="container px-[94px] py-[100px]">
-			<div class="d-flex justify-content-between align-items-center">
+			<div class="d-flex justify-content-between align-items-center max-xxl:gap-[50px]">
 				<div class="textSideLeft col-6">
-					<h3 class="gradient-theme-text-1 mb-[30px]">The Futurescool Approach To Innovative Learning</h3>
-					<h4 class="poppins-normal">Futurescool, born from tech industry leaders and visionary educators,
+					<h3 class="gradient-theme-text-1 mb-[30px] ">The Futurescool Approach To Innovative Learning</h3>
+					<h4 class="poppins-normal max-xxl:!text-[18px]">Futurescool, born from tech industry leaders and visionary educators,
 						inspires young minds to become future innovators. Our interactive after-school program, for ages
 						8-18, covers personal development, digital literacy, and more, using cutting-edge methods like
 						Problem-Based Learning, Harvard's Case Study approach, and Google's Moonshot framework. Empower
@@ -115,8 +130,8 @@
 		<div class="container px-[44px] py-[100px]">
 			<h3 class="text-white text-center mb-[50px]">Programmes Designed To Deliver Results</h3>
 			<div class="d-flex justify-content-between align-items-center gap-[20px] flex-wrap">
-				<div class=" bg-white  p-[40px] h-[404px] ">
-					<div class="w-[220px]">
+				<div class=" bg-white col  p-[40px] max-xxl:h-[473px] h-[404px] ">
+					<div class="max-w-[220px]">
 						<div class="imgBox mb-[20px]">
 							<img src="./assets/programmes/tutor.png" alt="">
 						</div>
@@ -125,8 +140,8 @@
 						</h6>
 					</div>
 				</div>
-				<div class=" bg-white  p-[40px] h-[404px] ">
-					<div class="w-[220px]">
+				<div class=" bg-white col  p-[40px] max-xxl:h-[473px] h-[404px] ">
+					<div class="max-w-[220px]">
 						<div class="imgBox mb-[20px]">
 							<img src="./assets/programmes/personalized.png" alt="">
 						</div>
@@ -135,8 +150,8 @@
 							designed to be fun, interactive and immerse</h6>
 					</div>
 				</div>
-				<div class=" bg-white  p-[40px] h-[404px] ">
-					<div class="w-[220px]">
+				<div class=" bg-white col  p-[40px] max-xxl:h-[473px] h-[404px] ">
+					<div class="max-w-[220px]">
 						<div class="imgBox mb-[20px]">
 							<img src="./assets/programmes/curriculum.png" alt="">
 						</div>
@@ -145,8 +160,8 @@
 							from the world of education, technology & business</h6>
 					</div>
 				</div>
-				<div class=" bg-white  p-[40px] h-[404px] ">
-					<div class="w-[220px]">
+				<div class=" bg-white col  p-[40px] max-xxl:h-[473px] h-[404px] ">
+					<div class="max-w-[220px]">
 						<div class="imgBox mb-[20px]">
 							<img src="./assets/programmes/clarity.png" alt="">
 						</div>
@@ -165,23 +180,279 @@
 		</div>
 	</section>
 
+
+
+	<!-- VR KIDS IMAGE SECTION  -->
+	<section id="qIMGsec" class="h-[513px]">
+		<img src="./assets/VR.png" class="h-full w-full" alt="">
+	</section>
+
 	<!-- CHILD LEARNING SECTION  -->
 
-	<section id="resultSec" class="">
-		<div class="container">
-			<h3 class="text-white leading-[43.57px]">RASAS</h3>
-			<div class="d-flex justify-between">
-
+	<section id="FAQsection" class="">
+		<div class="container ">
+			<div class="box mx-[111px] py-[50px]">
+				<div class="d-flex justify-center">
+					<h3 class="gradient-theme-text-1 mb-[8px]">Your child will learn</h3>
+				</div>
+				<p class="text-[24px] leading-[36px] poppins-normal text-center mb-[30px] px-[68px]">Cultivating these
+					skills is a vital mission at Futurescool. Together, these skills form a robust
+					foundation for your child's personal and education success. They empower children to adapt to
+					changing circumstances, thrive in diverse environments, and make positive contributions to society.
+				</p>
+				<div class="accordion px-[135px] grid grid-cols-2 gap-[15px] justify-between" id="accordionExample">
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px] collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+								aria-controls="collapseOne">
+								<img src="./assets/child_logos/Thinking.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Critical thinking</h6>
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the first item's accordion body.</strong> It is shown by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+								aria-controls="collapseSix">
+								<img src="./assets/child_logos//brain.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Logic</h6>
+							</button>
+						</h2>
+						<div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+								aria-controls="collapseTwo">
+								<img src="./assets/child_logos/stctr.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Structure</h6>
+							</button>
+						</h2>
+						<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the second item's accordion body.</strong> It is hidden by default,
+								until the collapse plugin adds the appropriate classes that we use to style each
+								element. These classes control the overall appearance, as well as the showing and hiding
+								via CSS transitions. You can modify any of this with custom CSS or overriding our
+								default variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+								aria-controls="collapseSeven">
+								<img src="./assets/child_logos/creative.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Creative thinking</h6>
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+								aria-controls="collapseThree">
+								<img src="./assets/child_logos/user-plus-bottom.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Confidence</h6>
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+								aria-controls="collapseSeven">
+								<img src="./assets/child_logos/solve.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Problem solving</h6>
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+								aria-controls="collapseFour">
+								<img src="./assets/child_logos/comments-text.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Communication skills</h6>
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+								aria-controls="collapseSeven">
+								<img src="./assets/child_logos/Union.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Resiliency</h6>
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+								aria-controls="collapseFive">
+								<img src="./assets/child_logos/grit.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Grit</h6>
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-item border-0 mb-[15px] ">
+						<h2 class="accordion-header">
+							<button class="accordion-button !px-[30px] !py-[20px]  collapsed" type="button"
+								data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+								aria-controls="collapseSeven">
+								<img src="./assets/child_logos/hands.png" class="mr-[10px]" alt="" />
+								<h6 class="!font-medium mb-0">Empathy</h6>
+							</button>
+						</h2>
+						<div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+							<div class="accordion-body">
+								<strong>This is the third item's accordion body.</strong> It is hidden by default, until
+								the collapse plugin adds the appropriate classes that we use to style each element.
+								These classes control the overall appearance, as well as the showing and hiding via CSS
+								transitions. You can modify any of this with custom CSS or overriding our default
+								variables. It's also worth noting that just about any HTML can go within the
+								<code>.accordion-body</code>, though the transition does limit overflow.
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
+
+
 	<!-- RESULTS SECTION  -->
 	<section id="resultSec" class="bg-dark-theme">
-		<div class="container py-[100px]">
-			<h3 class="text-white leading-[43.57px]  text-center">Result We Deliver</h3>
-			<div class="d-flex justify-between">
-
+		<div class="container py-[100px] px-[65px]">
+			<h3 class="text-white leading-[43.57px]  text-center ">Result We Deliver</h3>
+			<div class="d-flex justify-between my-[50px] gap-[24px]">
+				<div class="col">
+					<div id="imgBox " class="flex justify-center mb-[30px]">
+						<img src="./assets/percents/93.png" alt="">
+					</div>
+					<p class="poppins-normal text-center gray-text-theme leading-[24px]">
+						Students rate Futurescool experience as 'excellent'
+					</p>
+				</div>
+				<div class="col">
+					<div id="imgBox " class="flex justify-center mb-[30px]">
+						<img src="./assets/percents/93.png" alt="">
+					</div>
+					<p class="poppins-normal text-center gray-text-theme leading-[24px]">
+						Students would recommend Futurescool
+					</p>
+				</div>
+				<div class="col">
+					<div id="imgBox " class="flex justify-center mb-[30px]">
+						<img src="./assets/percents/93.png" alt="">
+					</div>
+					<p class="poppins-normal text-center gray-text-theme leading-[24px]">
+						Students said Futurscool is more fun & engaging than school
+					</p>
+				</div>
+				<div class="col">
+					<div id="imgBox " class="flex justify-center mb-[30px]">
+						<img src="./assets/percents/93.png" alt="">
+					</div>
+					<p class="poppins-normal text-center gray-text-theme leading-[24px]">
+						Parents say their child is more engaged at school
+					</p>
+				</div>
+				<div class="col">
+					<div id="imgBox " class="flex justify-center mb-[30px]">
+						<img src="./assets/percents/93.png" alt="">
+					</div>
+					<p class="poppins-normal text-center gray-text-theme leading-[24px]">
+						Parents say their child is more confident
+					</p>
+				</div>
 			</div>
 			<div class="flex justify-center">
 				<button class="  btn-theme-pad theme-btn-radius btn-M  gradient-border-theme-1"><a
@@ -202,48 +473,48 @@
 				<p class="poppins-semi-bold leading-[19px] border-bottom-theme-2 border-b-[3px] pb-[7px]">Students</p>
 				<p class="poppins-semi-bold leading-[19px] pb-[7px]">Parents</p>
 			</div>
-			<div class="d-flex justify-between mt-[29px]">
-				<div class="studBox bg-white col-3  w-[300px]">
-					<div class="imgDiv h-[280px]  w-[300px]">
+			<div class="d-flex justify-between mt-[29px] gap-[30px]">
+				<div class="studBox bg-white col  ">
+					<div class="imgDiv h-[280px]  ">
 						<img src="./assets/student_1.png" class="stud-1BG h-full w-full object-contain">
 					</div>
 					<div class="txtDiv h-[276px] text-center px-[20px]">
 						<h5 class="!font-bold mb-[14px] pt-[20px]">Kai R</h5>
-						<h6 class="leading-[27px] !font-medium bit-dark pb-[23px]">Learning robotics at Futurescool has
+						<h6 class="leading-[27px] !font-normal bit-dark pb-[23px]">Learning robotics at Futurescool has
 							been a blast! I
 							never thought I could build my own
 							robot, but now I can, and it moves and follows commands!</h6>
 					</div>
 				</div>
-				<div class="studBox bg-white col-3  w-[300px]">
-					<div class="imgDiv h-[280px]  w-[300px]">
+				<div class="studBox bg-white col  ">
+					<div class="imgDiv h-[280px]  ">
 						<img src="./assets/student_2.png" class="stud-2BG h-full w-full object-contain">
 					</div>
 					<div class="txtDiv h-[276px] text-center px-[20px]">
 						<h5 class="!font-bold mb-[14px] pt-[20px]">Annabella R</h5>
-						<h6 class="leading-[27px] !font-medium bit-dark pb-[23px]">Futurescool's Creativity & Innovation
+						<h6 class="leading-[27px] !font-normal bit-dark pb-[23px]">Futurescool's Creativity & Innovation
 							class has helped
 							me become more imaginative and think outside the box.</h6>
 					</div>
 				</div>
-				<div class="studBox bg-white col-3  w-[300px]">
-					<div class="imgDiv h-[280px]  w-[300px]">
+				<div class="studBox bg-white col  ">
+					<div class="imgDiv h-[280px]  ">
 						<img src="./assets/student_3.png" class="stud-3BG h-full w-full object-contain">
 					</div>
 					<div class="txtDiv h-[276px] text-center px-[20px]">
 						<h5 class="!font-bold mb-[14px] pt-[20px]">Themba L </h5>
-						<h6 class="leading-[27px] !font-medium bit-dark pb-[23px]">Studying AI at Futurescool has been
+						<h6 class="leading-[27px] !font-normal bit-dark pb-[23px]">Studying AI at Futurescool has been
 							mind-blowing! I get
 							to teach computers how to think and learn just like humans do.</h6>
 					</div>
 				</div>
-				<div class="studBox bg-white col-3  w-[300px]">
-					<div class="imgDiv h-[280px]  w-[300px]">
+				<div class="studBox bg-white col  ">
+					<div class="imgDiv h-[280px]  ">
 						<img src="./assets/student_4.png" class="stud-4BG h-full w-full object-contain">
 					</div>
 					<div class="txtDiv h-[276px] text-center px-[20px]">
 						<h5 class="!font-bold mb-[14px] pt-[20px]">Rubeena</h5>
-						<h6 class="leading-[27px] !font-medium bit-dark pb-[23px]">Futurescool's class on Building
+						<h6 class="leading-[27px] !font-normal bit-dark pb-[23px]">Futurescool's class on Building
 							Adaptability &
 							Resilience has been super helpful. I used to get nervous when things didn't go as planned,
 							but now I know how to adapt and bounce back.</h6>
@@ -256,7 +527,7 @@
 
 
 	<!-- QUESTION IMAGE SECTION  -->
-	<section id="qIMGsec" class="h-[552px]">
+	<section id="qIMGsec" class="h-[513px]">
 		<img src="./assets/questions.png" class="h-full w-full" alt="">
 	</section>
 
