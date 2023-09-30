@@ -251,3 +251,11 @@ a {
 .footer-border-color {
   border-color:rgba(145, 158, 171, 1);
 }
+
+.footer-bottom-hr {
+  border-color: rgba(33, 43, 54, 1);
+}
+
+#footer-news {
+  transform: translateY(-26px);
+}
