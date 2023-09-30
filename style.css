@@ -188,7 +188,8 @@ a {
   font-weight: 600 !important;
   font-size: 12px !important;
   line-height: 20px !important;
-  text-decoration: underline !important;
+  border-bottom: 1px solid !important;
+  text-decoration: none !important;
 }
 
 .btn-theme-pad {
@@ -241,4 +242,12 @@ a {
 
 .bg-black-theme {
   background: rgba(0, 0, 0, 1);
+}
+
+.footer-gray-theme {
+  color: rgba(145, 158, 171, 1)
+}
+
+.footer-border-color {
+  border-color:rgba(145, 158, 171, 1);
 }
