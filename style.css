@@ -224,6 +224,12 @@ a {
   border-image: linear-gradient(90deg, #6288A1 0%, #B377D3 52.08%, #B86B85 100%) 1;
 }
 
+.border-bottom-theme-2 {
+  border-bottom-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #57D7FF 0%, #C557FF 31.77%, #7555FF 69.27%, #8281FD 100%) 1;
+}
+
 .gradient-border-theme-1 {
   background: linear-gradient(101.76deg, #252B3B 0%, #161819 100%) padding-box,
     linear-gradient(90deg, #6288A1 0%, #B377D3 52.08%, #B86B85 100%) border-box;
@@ -258,4 +264,27 @@ a {
 
 #footer-news {
   transform: translateY(-26px);
+}
+
+#FAQsection .box {
+  box-shadow: -24px 24px 72px -8px rgba(145, 158, 171, 0.24);
+}
+
+#FAQsection .according-item {
+  border: 0 !important;
+}
+
+#FAQsection .accordion-button {
+  border: 1px solid rgba(30, 31, 36, 0.15) !important;
+  border-radius: 4px !important;
+}
+#FAQsection .box {
+  background-color: rgba(249, 250, 251, 1) !important;
+  transform: translateY(-160px);
+}
+
+#FAQsection .accordion-button::after {
+  background-image: url("./assets/plus.png");
+  background-size: 14.58px;
+  align-self: end;
 }
