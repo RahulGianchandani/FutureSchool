@@ -100,64 +100,64 @@ h6 {
 }
 
 p {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400 !important;
 }
 
 button {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
 }
 
 a {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
 }
 
 .subtitle1 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 16px !important;
   line-height: 28px !important;
 }
 
 .subtitle2 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 26px !important;
 }
 
 .subtitle3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 13px !important;
   line-height: 24px !important;
 }
 
 .body-1 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400 !important;
   font-size: 16px !important;
   line-height: 28px !important;
 }
 
 .body-2 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400 !important;
   font-size: 14px !important;
   line-height: 26px !important;
 }
 
 .body-3 {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400 !important;
   font-size: 13px !important;
   line-height: 24px !important;
 }
 
 .btn-L {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 15px !important;
   line-height: 26px !important;
@@ -165,7 +165,7 @@ a {
 }
 
 .btn-M {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 14px !important;
   line-height: 24px !important;
@@ -173,7 +173,7 @@ a {
 }
 
 .btn-S {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 13px !important;
   line-height: 22px !important;
@@ -181,14 +181,14 @@ a {
 }
 
 .caption {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 400 !important;
   font-size: 12px !important;
   line-height: 20px !important;
 }
 
 .overline {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 600 !important;
   font-size: 12px !important;
   line-height: 20px !important;
@@ -318,7 +318,7 @@ a {
   color: rgba(0, 0, 0, 1);
 }
 
-#resultSec .gray-text-theme {
+.gray-text-theme {
   color: rgba(196, 205, 213, 1);
 
 }
