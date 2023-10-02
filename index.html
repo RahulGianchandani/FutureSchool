@@ -273,10 +273,11 @@
 						</div>
 
 
-						<div class="priceBtn d-flex justify-center ">
+						<div class="priceBtn d-flex justify-center onAppears">
 							<button
-								class="!font-medium !leading-[26px] !py-[16px] !text-[20px] certBtn mb-[30px] gradient-border-theme-2 !rounded-[10px] btn-theme-pad theme-btn-radius text-white btn-M w-full   hover:opacity-80 duration-300">
-								£825
+								class="flex justify-center items-center certBtn gradient-border-theme-2 text-white !rounded-[10px] btn-theme-pad theme-btn-radius !text-[20px] py-[16px] !font-medium !leading-[26px]  w-full btn-M hover:opacity-80 duration-300">
+								<span>£</span><span class="odometer !font-medium !leading-[26px] btn-M !text-[20px]"
+									id="odometer1">0</span>
 							</button>
 						</div>
 					</div>
@@ -360,8 +361,10 @@
 
 						<div class="priceBtn d-flex justify-center ">
 							<button
-								class="!font-medium !leading-[26px] !py-[16px] !text-[20px] certBtn mb-[30px] gradient-border-theme-2 !rounded-[10px] btn-theme-pad theme-btn-radius text-white btn-M w-full   hover:opacity-80 duration-300">
-								£1,950
+								class="flex justify-center items-center !font-medium !leading-[26px] !py-[16px] !text-[20px] certBtn mb-[30px] gradient-border-theme-2 !rounded-[10px] btn-theme-pad theme-btn-radius text-white btn-M w-full   hover:opacity-80 duration-300">
+								<!-- £1,950 -->
+								<span>£</span><span class="odometer !font-medium !leading-[26px] btn-M !text-[20px]"
+									id="odometer2">0</span>
 							</button>
 						</div>
 					</div>
@@ -444,8 +447,10 @@
 
 						<div class="priceBtn d-flex justify-center ">
 							<button
-								class="!font-medium !leading-[26px] !py-[16px] !text-[20px] certBtn mb-[30px] gradient-border-theme-2 !rounded-[10px] btn-theme-pad theme-btn-radius text-white btn-M w-full   hover:opacity-80 duration-300">
-								£3,100
+								class="flex justify-center items-center !font-medium !leading-[26px] !py-[16px] !text-[20px] certBtn mb-[30px] gradient-border-theme-2 !rounded-[10px] btn-theme-pad theme-btn-radius text-white btn-M w-full   hover:opacity-80 duration-300">
+								<!-- £3,100 -->
+								<span>£</span><span class="odometer !font-medium !leading-[26px] btn-M !text-[20px]"
+									id="odometer3">0</span>
 							</button>
 						</div>
 					</div>
@@ -1224,97 +1229,122 @@
 
 		var onAppear = [];
 
-document.addEventListener("DOMContentLoaded", function() {
-  onAppear = [].map.call(document.querySelectorAll(".onAppear"), function(item ) {
-    return item;
-  });
-}, false);
+		document.addEventListener("DOMContentLoaded", function () {
+			onAppear = [].map.call(document.querySelectorAll(".onAppear"), function (item) {
+				return item;
+			});
+		}, false);
 
-window.addEventListener("scroll", function() {
-  onAppear.forEach(function(elem) {
-    var vwTop = window.pageYOffset;
-    var vwBottom = (window.pageYOffset + window.innerHeight);
-    var elemTop = elem.offsetTop;
-    var elemHeight = elem.offsetHeight;
-    
-    if (vwBottom > elemTop && ((vwTop - elemHeight) < elemTop) && el.classList.contains("onAppear")) {
-		el.classList.remove("onAppear");
-		counters.forEach((counter) => {	
-			let count = 0;
-			const target = +counter.dataset.target; // convert to number
-			const duration = 3000; // in milliseconds
-			const stepTime = Math.abs(Math.floor(duration / (target - count)));
-			const timer = setInterval(() => {
-				count++;
-				counter.textContent = count;
-				if (count === target) {
-					clearInterval(timer);
+		window.addEventListener("scroll", function () {
+			onAppear.forEach(function (elem) {
+				var vwTop = window.pageYOffset;
+				var vwBottom = (window.pageYOffset + window.innerHeight);
+				var elemTop = elem.offsetTop;
+				var elemHeight = elem.offsetHeight;
+
+				if (vwBottom > elemTop && ((vwTop - elemHeight) < elemTop) && el.classList.contains("onAppear")) {
+					el.classList.remove("onAppear");
+					counters.forEach((counter) => {
+						let count = 0;
+						const target = +counter.dataset.target; // convert to number
+						const duration = 3000; // in milliseconds
+						const stepTime = Math.abs(Math.floor(duration / (target - count)));
+						const timer = setInterval(() => {
+							count++;
+							counter.textContent = count;
+							if (count === target) {
+								clearInterval(timer);
+							}
+						}, stepTime);
+					});
+
+
+					$(".circle94").circleProgress({
+						value: 0.94,
+						thickness: 5,
+						animation: { duration: 3000, easing: "circleProgressEasing" },
+						size: 200,
+						fill: {
+							gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
+						},
+					});
+
+					$(".circle93").circleProgress({
+						value: 0.93,
+						thickness: 5,
+						size: 200,
+						animation: { duration: 3000, easing: "circleProgressEasing" },
+						fill: {
+							gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
+						},
+					});
+
+					$(".circle89").circleProgress({
+						value: 0.89,
+						thickness: 5,
+						size: 200,
+						animation: { duration: 3000, easing: "circleProgressEasing" },
+						fill: {
+							gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
+						},
+					});
+
+					$(".circle95").circleProgress({
+						value: 0.95,
+						thickness: 5,
+						size: 200,
+						animation: { duration: 3000, easing: "circleProgressEasing" },
+						fill: {
+							gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
+						},
+					});
+
+					$(".circle82").circleProgress({
+						value: 0.82,
+						thickness: 5,
+						size: 200,
+						animation: { duration: 3000, easing: "circleProgressEasing" },
+						fill: {
+							gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
+						},
+					});
+
+				} else {
+					//   elem.classList.remove("visible");
 				}
-			}, stepTime);
-		});
+			});
+		}, false);
 
 
-		$(".circle94").circleProgress({
-			value: 0.94,
-			thickness: 5,
-			animation: { duration: 3000, easing: "circleProgressEasing" },
-			size: 200,
-			fill: {
-				gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
-			},
-		});
 
-		$(".circle93").circleProgress({
-			value: 0.93,
-			thickness: 5,
-			size: 200,
-			animation: { duration: 3000, easing: "circleProgressEasing" },
-			fill: {
-				gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
-			},
-		});
+		var onAppears = [];
 
-		$(".circle89").circleProgress({
-			value: 0.89,
-			thickness: 5,
-			size: 200,
-			animation: { duration: 3000, easing: "circleProgressEasing" },
-			fill: {
-				gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
-			},
-		});
+		document.addEventListener("DOMContentLoaded", function () {
+			onAppears = [].map.call(document.querySelectorAll(".onAppears"), function (item) {
+				return item;
+			});
+		}, false);
 
-		$(".circle95").circleProgress({
-			value: 0.95,
-			thickness: 5,
-			size: 200,
-			animation: { duration: 3000, easing: "circleProgressEasing" },
-			fill: {
-				gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
-			},
-		});
+		window.addEventListener("scroll", function () {
+			onAppears.forEach(function (elem) {
+				var vwTop = window.pageYOffset;
+				var vwBottom = (window.pageYOffset + window.innerHeight);
+				var elemTop = elem.offsetTop;
+				var elemHeight = elem.offsetHeight;
 
-		$(".circle82").circleProgress({
-			value: 0.82,
-			thickness: 5,
-			size: 200,
-			animation: { duration: 3000, easing: "circleProgressEasing" },
-			fill: {
-				gradient: ["#57D7FF", "#C557FF", "#7555FF", "#8281FD"],
-			},
-		});
+				if (vwBottom > elemTop && ((vwTop - elemHeight) < elemTop)) {
+					console.log("hellooo");
+					setTimeout(function () {
+						odometer1.innerHTML = 825;
+						odometer2.innerHTML = 1950;
+						odometer3.innerHTML = 3100;
+					}, 0);
+				}
+			});
+		}, false);
 
-    } else {
-    //   elem.classList.remove("visible");
-    }
-  });
-}, false);
 
-		
 
-		// setTimeout(function () {
-		// 	odometer.innerHTML = 986;
-		// }, 1000);
 	</script>
 
 </body>
